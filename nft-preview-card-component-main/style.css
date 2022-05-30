@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+.image {
+    position: relative;
+}
+
+.image div {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 93%;
+    background-color: hsl(178, 100%, 50%, 40%);
+    opacity: 0;
+}
+
+.image div:hover {
+    opacity: 1;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.image div img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.attribution {
+    color: rgb(104, 137, 167);
+    font-size: 11px;
+    text-align: center;
+    position: fixed;
+    bottom: 2px;
+    left: 2px;
+}
+
+.attribution a {
+    color: hsl(228, 4%, 53%);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(217, 54%, 11%);
+}
+
+.box {
+    width: 345px;
+    height: 570px;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(216, 50%, 16%);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
+}
+
+#eth-img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 18px;
+}
+
+.box h1 {
+    color: hsl(0, 0%, 100%);
+    font-size: 20px;
+    margin-bottom: 18px;
+    cursor: pointer;
+}
+
+.box p {
+    font-size: 18px;
+    color: hsl(215, 51%, 70%);
+    margin-bottom: 18px;
+}
+
+.value-line {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+
+.eth {
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: hsl(178, 100%, 50%);
+}
+
+.value-line img {
+    margin-right: 6px;
+}
+
+.days {
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: hsl(215, 51%, 70%);
+}
+
+.creator {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.creator img {
+    width: 30px;
+    margin-right: 12px;
+    border-radius: 50%;
+    border: 1px solid hsl(0, 0%, 100%);
+}
+
+.creation {
+    color: hsl(215, 51%, 70%);
+    margin-right: 5px;
+}
+
+.creator {
+    color: hsl(0, 0%, 100%);
+}
+
+.creator-name {
+    cursor: pointer;
+}
+
+.box h1:hover, .creator-name:hover{
+    color: hsl(178, 100%, 50%);
+}
