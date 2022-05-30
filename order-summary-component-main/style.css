@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    background: url(images/pattern-background-desktop.svg) no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    position: fixed;
+    left: 2px;
+    bottom: 2px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.card {
+    width: 355px;
+    display: flex;
+    flex-direction: column;
+    background-color: white; 
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 15px;
+}
+
+#img-card {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+.card-content {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card-content h1 {
+   font-size: 20px; 
+   color: hsl(223, 47%, 23%);
+}
+
+#info {
+    font-size: 16px;
+    color: hsl(224, 23%, 55%);
+    margin-top: 18px;
+}
+
+.plan-content {
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    height: 60px;
+    margin: 20px 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 10px;
+}
+
+.icon-and-plan {
+    display: flex;
+}
+
+.icon-and-plan img {
+    margin: auto;
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+
+.plan {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.plan h2 {
+    font-size: 14px;
+    color: hsl(223, 47%, 23%);
+}
+
+.plan p {
+    font-size: 14px;
+    color: hsl(224, 23%, 55%);
+}
+
+.plan-content a {
+    font-size: 14px;
+    color: hsl(245, 75%, 52%);
+    transition: 0.3s;
+}
+
+.card-content button {
+    cursor: pointer;
+    width: 100%;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-weight: 600;
+    background-color: hsl(245, 75%, 52%);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    transition: 0.3s;
+}
+
+#cancel-order {
+    margin-top: 20px;
+    font-size: 10px;
+    height: 14px;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    color: hsl(224, 23%, 55%);
+    transition: 0.1s;
+}
+
+.plan-content a:hover {
+    color: hsl(245, 79%, 68%);
+    text-decoration: none;
+}
+
+.card-content button:hover {
+    background-color: hsl(245, 79%, 68%);
+}
+
+#cancel-order:hover {
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    font-size: 14px;
+    letter-spacing: none;
+}
