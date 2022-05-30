@@ -9,6 +9,8 @@
 body {
     font-family: 'Red Hat Display', sans-serif;
     background: url(images/pattern-background-desktop.svg) no-repeat;
+    background-position: top center;
+    background-size: 250vmin 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
